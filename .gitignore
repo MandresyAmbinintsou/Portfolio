@@ -1,0 +1,6 @@
+--liste des dossiers et fichiers a exclure--
+
+*.vscode/
+*fontawesome-free-6.7.2-web/
+*bootstrap-5.3.3-dist/
+*st.md

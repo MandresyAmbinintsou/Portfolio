@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mandresy</title>
+    <!-- CDN Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar"> 
+        <div class="navbar-brand">
+          <a href="#"><span style="color: #3f3fe4;">Mandresy</span> <span style="color: #2c2cc0;">Ambinintsoa</span> </a>
+        </div>
+    
+        <div class="burger" id="burger">
+            ☰
+        </div>
+    
+        <ul class="navbar-menu" id="navbar-menu">
+          <li class="nav-item"><a href="#acceuil">Accueil</a></li>
+          <li class="nav-item"><a href="#about">À propos</a></li>
+          <li class="nav-item"><a href="#skills">Compétences</a></li>
+          <li class="nav-item"><a href="#projet">Projets</a></li>
+          <li class="nav-item"><a href="#cts">Contacts</a></li>
+        </ul>
+        <div class="nuit">
+            <i class="fa-solid fa-moon" id="toggle-dark"></i>
+        </div>
+        
+    </nav>
+    
+     
+    <div class="hero-section" id="acceuil">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm Mandresy <span class="highlight">Ambinintsoa</span></h1>
+                <p class="hero-text">Étudiant en Informatique spécialisé en <strong>Réseaux et Systèmes</strong>, 
+                   passionné par le <strong>Développement Web</strong> et la <strong>Programmation</strong>.
+                </p>
+                <div class="hero-btns">
+                    <a href="#skills" class="btn custom-btn">Mes Compétences</a>
+                    <a href="#projet" class="btn custom-btn-outline-blue">Voir mes Projets</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-blob"></div>
+            </div>
+        </div>
+    </div>
+             
+             <section class="about-section reveal">
+                <div class="container">
+            
+                    <div class="jumbotron" id="about"> <h2>A propos</h2></div>
+            
+                    <div class="row about-row justify-content-center text-lg-center g-5">
+            
+                        <div class="col-lg-9 col-md-6 text-section text-lg-center">
+                            <h2 class="title2">Développeur Web et Programmation</h2>
+            
+                            <div class="child1">
+                                <div class="c1">
+                                    Informaticien motivé par le metier de l'IA et la programmation, avec une solide expérience en Réseaux et Cybersécurité.
+                                </div>
+            
+                                <div class="c2 p-2">
+                                    En cours d'obtention de mon diplôme de Licence en Maintenance,
+                                    Système Informatique, Électronique et Réseaux à U-Magis St Michel.
+                                </div>
+            
+                                <div class="btn-group mt-3">
+                                    <a href="CV/CV_2026042209005641.pdf" class="btn custom-btn" download>Télécharger CV</a>
+                                    <a href="#cts" class="btn custom-btn-outline-blue">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6">
+            
+                            <div class="services">
+                                <div class="service-card reveal">
+                                    <div class="card-title">
+                                        <i class="fa-solid fa-code"></i>
+                                        Web Development
+                                    </div>
+                                    <p>Création de site web responsive et intuitive sur mesure</p>
+                                </div>
+            
+                                <div class="service-card reveal">
+                                    <div class="card-title">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        Technicien Réseaux
+                                    </div>
+                                    <p>Solutions et dépannages hardware / software / réseaux</p>
+                                </div>
+            
+                                <div class="service-card reveal">
+                                    <div class="card-title">
+                                        <i class="fa-solid fa-gears"></i>
+                                        Suivi CI/CD
+                                    </div>
+                                    <p>Suivi de vos projets et pipelines CI/CD</p>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>
+            </section>
+            
+            <section class="skills-row reveal" id="skills">
+                <div class="jumbotron">
+                  <h2>Mes Compétences</h2>
+                </div>
+              
+                <div class="skills-container">
+                  
+                  <div class="skills-column reveal">
+                    <h3 class="skills-subtitle">Front-end</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"> HTML</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"> CSS</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"> React</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"> Bootstrap</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"> Tailwind</div>
+                    </div>
+                  </div>
+              
+                  <div class="skills-column reveal">
+                    <h3 class="skills-subtitle">Back-end</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"> PHP</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"> Django</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"> MySQL</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"> Node.js</div>
+                    </div>
+                  </div>
+              
+                  <div class="skills-column reveal">
+                    <h3 class="skills-subtitle">Programmation</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"> C/C++</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"> Java</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native"> React Native</div>
+                    </div>
+                  </div>
+              
+                  <div class="skills-column reveal">
+                    <h3 class="skills-subtitle">Outils</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"> Git/GitHub</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"> Bash</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"> Linux</div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"> Photoshop</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section class="project-row" id="projet">
+                <div class="jumbotron reveal">
+                  <h2>Mes Projets</h2>
+                </div>
+              
+                <div class="project-container">
+                 
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/logo.jpeg" alt="VigIA">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">VigIA</h3>
+                        <p class="project-desc">Une IA conçue pour la supervision et la surveillance d'un réseau d'entreprise, optimisant la sécurité et la détection d'anomalies.</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Streamlit</span>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/image copy 3.png" alt="My-dep">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">My-dep</h3>
+                        <p class="project-desc">Une application mobile intuitive pour le suivi et la gestion rigoureuse des dépenses quotidiennes personnelles.</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/pokadex.jpg" alt="Pokadex">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Pokadex</h3>
+                        <p class="project-desc">Une encyclopédie interactive complète de Pokémon permettant d'explorer les caractéristiques de chaque créature.</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">Angular</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">REST API</span>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/image.png" alt="FaceDetect">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">FaceAnime Detect</h3>
+                        <p class="project-desc">Outil d'analyse d'image pour connaitre les faces de personnages d'animés et mangas par IA</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Yolov</span>
+                            <span class="tech-badge">Rest API </span>
+                        </div>
+                    </div>
+                  </div>
+              
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/1763749173196.jpg" alt="Smart Secure Hotspot">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Smart Secure Hotspot</h3>
+                        <p class="project-desc">Solution complète de gestion et de surveillance de hotspots WiFi avec authentification sécurisée.</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">PfSense</span>
+                            <span class="tech-badge">Active Directory</span>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/spacy.png" alt="Texteo">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">TextIA</h3>
+                        <p class="project-desc">Outil d'analyse grammaticale utilisant le traitement du langage naturel pour décortiquer la structure des textes.</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Tkinter</span>
+                            <span class="tech-badge">SpaCy NLP</span>
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card project reveal">
+                    <div class="project-img-wrapper">
+                        <img src="assets/image copy.png" alt="Vost-IA">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Vost-IA</h3>
+                        <p class="project-desc">IA de traduction en temps réel et génération automatique de sous-titres pour les contenus vidéos et animés (En cours).</p>
+                        <div class="techno-container">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">Deep Learning</span>
+                        </div>
+                    </div>
+                  </div>
+                   
+                  <div class="card project reveal">
+                    <div class="project-info" style="justify-content: center; align-items: center; text-align: center;">
+                        <i class="fa-brands fa-github" style="font-size: 3rem; color: #3f3fe4; margin-bottom: 15px;"></i>
+                        <p class="project-desc">Visitez mon compte GitHub pour découvrir l'intégralité de mes travaux et projets open-source.</p>
+                        <a href="http://github.com/MandresyAmbinintsou" target="_blank" class="custom-btn-outline-blue">Voir plus sur GitHub</a>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+
+        <div class="contact reveal" id="cts">
+            <section class="contact-row">
+                <div class="jumbotron">
+                  <h2>Contact</h2>
+                  <p>Envie de collaborer ou d'idée de nouveaux projets ? Je suis toujours disponible pour de nouvelles opportunités.</p>
+                </div>
+              
+                <div class="contact-container single-column">
+              
+                  <div class="contact-info">
+                    <div class="contact-card reveal">
+                      <div class="contact-content">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="contact-text">
+                          <h3 class="project-title">E-Mail</h3>
+                          <p class="project-desc"><a href="mailto:MandresyAmbinintsou@gmail.com">MandresyAmbinintsou@gmail.com</a></p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="contact-card reveal">
+                      <div class="contact-content">
+                        <i class="fa-brands fa-github"></i>
+                        <div class="contact-text">
+                          <h3 class="project-title">GitHub</h3>
+                          <p class="project-desc"><a href="http://github.com/MandresyAmbinintsou" target="_blank">MandresyAmbinintsou</a></p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="contact-card reveal">
+                      <div class="contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-text">
+                          <h3 class="project-title">Phone</h3>
+                          <p class="project-desc"> <a href="tel:+261348048681">+261 34 80 486 81</a></p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="contact-card reveal">
+                      <div class="contact-content">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="contact-text">
+                          <h3 class="project-title">Adresse</h3>
+                          <p class="project-desc">Antananarivo, Madagascar</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              </section>
+        </div>      
+
+    </div>
+    
+<footer>
+    <div class="farany">
+       2026 MandresyAmbinintsou .Tout droits Réservés 
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
