@@ -663,10 +663,11 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: white;
+        background: #ffffff;
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        backdrop-filter: none;
     }
 
     .dark-mode .navbar-menu {
@@ -922,6 +923,19 @@ footer {
     .project-desc {
         font-size: 0.84rem;
     }
+
+    .project-img-wrapper {
+        height: 150px;
+    }
+
+    .project-info {
+        padding: 16px;
+    }
+
+    .tech-badge {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -969,6 +983,27 @@ footer {
         padding-left: 14px;
         padding-right: 14px;
     }
+
+    .project-img-wrapper {
+        height: 135px;
+    }
+
+    .project-info {
+        padding: 14px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+
+    .tech-badge {
+        font-size: 0.66rem;
+        padding: 3px 7px;
+    }
 }
 
 @media (max-width: 220px) {
@@ -1008,6 +1043,44 @@ footer {
 
     .skill-item {
         font-size: 0.76rem;
+    }
+
+    .project-img-wrapper {
+        height: 120px;
+    }
+
+    .project-info {
+        padding: 12px;
+    }
+
+    .project-title {
+        font-size: 0.92rem;
+    }
+
+    .project-desc {
+        font-size: 0.75rem;
+    }
+
+    .tech-badge {
+        font-size: 0.6rem;
+        padding: 3px 6px;
+    }
+
+    .project-img-wrapper {
+        height: 110px;
+    }
+
+    .project-info {
+        padding: 10px;
+    }
+
+    .project-title {
+        font-size: 0.86rem;
+    }
+
+    .tech-badge {
+        font-size: 0.56rem;
+        padding: 2px 5px;
     }
 }
 
@@ -1080,6 +1153,23 @@ footer {
     .skill-item,
     .project-desc {
         font-size: 0.7rem;
+    }
+
+    .project-img-wrapper {
+        height: 92px;
+    }
+
+    .project-info {
+        padding: 8px;
+    }
+
+    .project-title {
+        font-size: 0.78rem;
+    }
+
+    .tech-badge {
+        font-size: 0.52rem;
+        padding: 2px 4px;
     }
 }
 
