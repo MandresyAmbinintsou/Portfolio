@@ -338,7 +338,7 @@ a {
     padding: 22px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(63, 63, 228, 0.08);
-    transition: all 0.3s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .dark-mode .skills-column {
@@ -383,6 +383,7 @@ a {
     color: #444;
     font-size: 0.9rem;
     background: transparent;
+    transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
 .dark-mode .skill-item {
@@ -413,7 +414,7 @@ a {
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
     display: flex;
     flex-direction: column;
 }
@@ -611,6 +612,33 @@ footer {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.hero-content,
+.hero-image,
+.jumbotron,
+.skills-column,
+.card.project,
+.service-card {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.skills-column:nth-child(2),
+.card.project:nth-child(2),
+.service-card:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.skills-column:nth-child(3),
+.card.project:nth-child(3),
+.service-card:nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.skills-column:nth-child(4),
+.card.project:nth-child(4),
+.service-card:nth-child(4) {
+    animation-delay: 0.24s;
 }
 
 /* Animations */
@@ -813,6 +841,171 @@ footer {
     }
 }
 
+@media (max-width: 700px) {
+    .hero-section {
+        padding: 125px 16px 45px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .skills-row {
+        padding: 40px 16px;
+    }
+
+    .skills-container {
+        gap: 14px;
+    }
+
+    .skills-column {
+        padding: 16px;
+    }
+
+    .project-img-wrapper {
+        height: 156px;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 280px);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 118px 14px 42px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-text {
+        font-size: 0.95rem;
+    }
+
+    .jumbotron h2 {
+        font-size: 1.6rem;
+    }
+
+    .project-img-wrapper {
+        height: 138px;
+    }
+
+    .project-info {
+        padding: 12px;
+    }
+
+    .skill-item {
+        padding: 8px 10px;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 260px);
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section {
+        padding: 112px 14px 38px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-text {
+        font-size: 0.92rem;
+    }
+
+    .project-img-wrapper {
+        height: 122px;
+    }
+
+    .project-title {
+        font-size: 0.95rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+
+    .skills-column {
+        padding: 14px;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 240px);
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding: 11px 12px;
+    }
+
+    .navbar-brand a {
+        font-size: 0.88rem;
+    }
+
+    .hero-section {
+        padding: 104px 12px 36px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.55rem;
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+    }
+
+    .project-img-wrapper {
+        height: 126px;
+    }
+
+    .project-info {
+        padding: 11px;
+    }
+
+    .project-title {
+        font-size: 0.88rem;
+    }
+
+    .project-desc {
+        font-size: 0.74rem;
+    }
+
+    .skills-column {
+        padding: 13px;
+    }
+
+    .skill-item {
+        font-size: 0.78rem;
+        padding: 7px 8px;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 260px);
+    }
+}
+
 @media (max-width: 360px) {
     .navbar {
         padding: 12px 14px;
@@ -949,6 +1142,14 @@ footer {
         padding: 8px 10px;
         font-size: 0.82rem;
     }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 230px);
+    }
 }
 
 @media (max-width: 300px) {
@@ -998,33 +1199,41 @@ footer {
     }
 
     .project-img-wrapper {
-        height: 112px;
+        height: 104px;
     }
 
     .project-info {
-        padding: 10px;
+        padding: 9px;
     }
 
     .project-title {
-        font-size: 0.88rem;
+        font-size: 0.82rem;
     }
 
     .project-desc {
-        font-size: 0.72rem;
+        font-size: 0.68rem;
     }
 
     .tech-badge {
-        font-size: 0.58rem;
-        padding: 2px 5px;
+        font-size: 0.54rem;
+        padding: 2px 4px;
     }
 
     .skills-column {
-        padding: 12px;
+        padding: 11px;
     }
 
     .skill-item {
-        font-size: 0.76rem;
-        padding: 7px 8px;
+        font-size: 0.73rem;
+        padding: 6px 7px;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 200px);
     }
 }
 
@@ -1068,24 +1277,32 @@ footer {
     }
 
     .project-desc {
-        font-size: 0.68rem;
+        font-size: 0.64rem;
     }
 
     .tech-badge {
-        font-size: 0.52rem;
-        padding: 2px 4px;
+        font-size: 0.48rem;
+        padding: 1px 3px;
     }
 
     .project-img-wrapper {
-        height: 96px;
+        height: 82px;
     }
 
     .project-info {
-        padding: 8px;
+        padding: 7px;
     }
 
     .project-title {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 180px);
     }
 }
 
@@ -1144,7 +1361,7 @@ footer {
     .card.project,
     .contact-card,
     .ct-form {
-        padding: 12px;
+        padding: 10px;
         border-radius: 10px;
     }
 
@@ -1157,24 +1374,32 @@ footer {
     .child1,
     .skill-item,
     .project-desc {
-        font-size: 0.7rem;
+        font-size: 0.66rem;
     }
 
     .project-img-wrapper {
-        height: 84px;
+        height: 72px;
     }
 
     .project-info {
-        padding: 8px;
+        padding: 6px;
     }
 
     .project-title {
-        font-size: 0.72rem;
+        font-size: 0.64rem;
     }
 
     .tech-badge {
-        font-size: 0.52rem;
-        padding: 2px 4px;
+        font-size: 0.44rem;
+        padding: 1px 3px;
+    }
+
+    .project-container {
+        justify-items: center;
+    }
+
+    .card.project {
+        width: min(100%, 160px);
     }
 }
 
