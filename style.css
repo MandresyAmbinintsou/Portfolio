@@ -120,6 +120,10 @@ a {
     color: #ffffff;
 }
 
+.dark-mode .hero-section {
+    background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+}
+
 .highlight {
     color: #3f3fe4;
 }
@@ -663,15 +667,15 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.8);
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        backdrop-filter: none;
+        backdrop-filter: blur(10px);
     }
 
     .dark-mode .navbar-menu {
-        background: #161b22;
+        background: rgba(13, 17, 23, 0.8);
     }
 
     .navbar-menu.active {
@@ -925,16 +929,25 @@ footer {
     }
 
     .project-img-wrapper {
-        height: 150px;
+        height: 138px;
     }
 
     .project-info {
-        padding: 16px;
+        padding: 14px;
     }
 
     .tech-badge {
-        font-size: 0.7rem;
-        padding: 4px 8px;
+        font-size: 0.65rem;
+        padding: 3px 7px;
+    }
+
+    .skills-column {
+        padding: 16px;
+    }
+
+    .skill-item {
+        padding: 8px 10px;
+        font-size: 0.82rem;
     }
 }
 
@@ -980,29 +993,38 @@ footer {
     .card.project,
     .contact-card,
     .ct-form {
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .project-img-wrapper {
-        height: 135px;
+        height: 112px;
     }
 
     .project-info {
-        padding: 14px;
+        padding: 10px;
     }
 
     .project-title {
-        font-size: 1rem;
+        font-size: 0.88rem;
     }
 
     .project-desc {
-        font-size: 0.8rem;
+        font-size: 0.72rem;
     }
 
     .tech-badge {
-        font-size: 0.66rem;
-        padding: 3px 7px;
+        font-size: 0.58rem;
+        padding: 2px 5px;
+    }
+
+    .skills-column {
+        padding: 12px;
+    }
+
+    .skill-item {
+        font-size: 0.76rem;
+        padding: 7px 8px;
     }
 }
 
@@ -1045,42 +1067,25 @@ footer {
         font-size: 0.76rem;
     }
 
-    .project-img-wrapper {
-        height: 120px;
-    }
-
-    .project-info {
-        padding: 12px;
-    }
-
-    .project-title {
-        font-size: 0.92rem;
-    }
-
     .project-desc {
-        font-size: 0.75rem;
+        font-size: 0.68rem;
     }
 
     .tech-badge {
-        font-size: 0.6rem;
-        padding: 3px 6px;
+        font-size: 0.52rem;
+        padding: 2px 4px;
     }
 
     .project-img-wrapper {
-        height: 110px;
+        height: 96px;
     }
 
     .project-info {
-        padding: 10px;
+        padding: 8px;
     }
 
     .project-title {
-        font-size: 0.86rem;
-    }
-
-    .tech-badge {
-        font-size: 0.56rem;
-        padding: 2px 5px;
+        font-size: 0.8rem;
     }
 }
 
@@ -1156,7 +1161,7 @@ footer {
     }
 
     .project-img-wrapper {
-        height: 92px;
+        height: 84px;
     }
 
     .project-info {
@@ -1164,7 +1169,7 @@ footer {
     }
 
     .project-title {
-        font-size: 0.78rem;
+        font-size: 0.72rem;
     }
 
     .tech-badge {
