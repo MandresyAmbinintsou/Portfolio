@@ -873,6 +873,14 @@ footer {
     .card.project {
         width: min(100%, 280px);
     }
+
+    .skills-container {
+        justify-items: center;
+    }
+
+    .skills-column {
+        width: min(100%, 280px);
+    }
 }
 
 @media (max-width: 600px) {
@@ -911,6 +919,14 @@ footer {
     .card.project {
         width: min(100%, 260px);
     }
+
+    .skills-container {
+        justify-items: center;
+    }
+
+    .skills-column {
+        width: min(100%, 250px);
+    }
 }
 
 @media (max-width: 500px) {
@@ -948,6 +964,14 @@ footer {
 
     .card.project {
         width: min(100%, 240px);
+    }
+
+    .skills-container {
+        justify-items: center;
+    }
+
+    .skills-column {
+        width: min(100%, 220px);
     }
 }
 
@@ -1150,6 +1174,14 @@ footer {
     .card.project {
         width: min(100%, 230px);
     }
+
+    .skills-container {
+        justify-items: center;
+    }
+
+    .skills-column {
+        width: min(100%, 200px);
+    }
 }
 
 @media (max-width: 300px) {
@@ -1304,6 +1336,14 @@ footer {
     .card.project {
         width: min(100%, 180px);
     }
+
+    .skills-container {
+        justify-items: center;
+    }
+
+    .skills-column {
+        width: min(100%, 170px);
+    }
 }
 
 @media (max-width: 200px) {
@@ -1400,6 +1440,14 @@ footer {
 
     .card.project {
         width: min(100%, 160px);
+    }
+
+    .skills-container {
+        justify-items: center;
+    }
+
+    .skills-column {
+        width: min(100%, 150px);
     }
 }
 
