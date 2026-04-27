@@ -130,6 +130,8 @@ a {
     color: #555;
     margin-bottom: 35px;
     max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dark-mode .hero-text {
@@ -140,6 +142,7 @@ a {
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .custom-btn, .custom-btn-outline-blue {
@@ -722,15 +725,32 @@ footer {
 
     .child1 {
         font-size: 0.9rem;
-        text-align: justify;
+        text-align: center;
+    }
+    
+    .btn-group {
+        justify-content: center;
+        width: 100%;
     }
 
     .skills-container {
         grid-template-columns: 1fr;
     }
     
+    .skill-item {
+        justify-content: center;
+    }
+    
     .project-container {
         grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        text-align: center;
+    }
+    
+    .card-title {
+        justify-content: center;
     }
 }
 
