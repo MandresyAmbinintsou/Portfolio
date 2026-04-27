@@ -226,7 +226,7 @@ a {
 
 /* About Section */
 .about-section {
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .about-row {
@@ -247,7 +247,7 @@ a {
     font-size: 1.6rem;
     font-weight: 700;
     color: #3f3fe4;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .child1 {
@@ -632,6 +632,18 @@ footer {
     .hero-image {
         order: -1;
     }
+    .about-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services {
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+    }
+    .service-card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -665,15 +677,60 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero-btns {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero-image {
         display: none;
+    }
+
+    .text-section {
+        text-align: center;
+    }
+
+    .child1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .custom-btn, .custom-btn-outline-blue {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .jumbotron h2 {
+        font-size: 1.8rem;
+    }
+
+    .child1 {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-container {
+        grid-template-columns: 1fr;
     }
 }
 
